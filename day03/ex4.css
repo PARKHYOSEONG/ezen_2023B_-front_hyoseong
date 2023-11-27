@@ -1,0 +1,19 @@
+.img{
+    border-bottom: solid 1px gray;
+}
+div{
+    border: solid 1px gray;
+    margin: 0 100px;
+}
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.price{
+    font-weight: bold;
+    font-size: 15px;
+}
+.num{
+    color: orange;
+    font-weight: bold;
+}

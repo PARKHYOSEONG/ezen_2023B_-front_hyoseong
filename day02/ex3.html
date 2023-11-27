@@ -2,24 +2,94 @@
 <html>
 <head>
     <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
-    <link rel="stylesheet" href="ex3.css">
-
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='ex3.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-    <form>
-            <fieldset>
+<div class="wrap">  <!-- 랩 WRAP 시작 -->
+    <div class="logoBox">   <!-- 로고 부분 div 박스 시작-->
+        <h1><img src="구글로고_1.png" alt="구글로고"/></h1>
+    </div>  <!-- 로고 부분 div 박스 END-->
+    <div class="formBox">   <!-- form 폼 div 박스 시작-->   
+        <!-- 폼 form 시작 -->
+        <form>
+            <!-- 만족도 조사 시작 -->
+            <fieldset class="setBack1">
+                <legend>검색엔진 만족도 조사</legend>
+                이름 : <input type="text"/> 
+                국가 : <select> 
+                        <option>대한민국</option>
+                        <option>미국</option>
+                        <option>일본</option>
+                    </select> 
+                <hr/>
+                <ol>
+                    <li>
+                        구글 검색을 자주 사용하시나요?<br/>
+                        <input type="radio" name="select"/>매우그렇다
+                        <input type="radio" name="select"/>그렇다
+                        <input type="radio" name="select"/>보통이다
+                        <input type="radio" name="select"/>아니다
+                        <input type="radio" name="select"/>매우아니다
+                    </li>
+                    <hr/>
+                    <li>
+                        검색 결과는 만족스러우신가요?<br/>
+                        <input type="radio" name="select1"/>매우그렇다
+                        <input type="radio" name="select1"/>그렇다
+                        <input type="radio" name="select1"/>보통이다
+                        <input type="radio" name="select1"/>아니다
+                        <input type="radio" name="select1"/>매우아니다
+                    </li>
+                    <hr/>
+                    <li>
+                        다른 검색엔진과 같이 사용해보신 적이 있으신가요 [EX. 네이버, 다음]<br/>
+                        <input type="radio" name="select2"/>매우그렇다
+                        <input type="radio" name="select2"/>그렇다
+                        <input type="radio" name="select2"/>보통이다
+                        <input type="radio" name="select2"/>아니다
+                        <input type="radio" name="select2"/>매우아니다
+                    </li>
+                    <hr/>
+                    <li>
+                        검색엔진의 UI는 만족스러우신가요?<br/>
+                        <input type="radio" name="select3"/>매우그렇다
+                        <input type="radio" name="select3"/>그렇다
+                        <input type="radio" name="select3"/>보통이다
+                        <input type="radio" name="select3"/>아니다
+                        <input type="radio" name="select3"/>매우아니다
+                    </li>
+                    <hr/>
+                    <li>
+                        GOOGLE 검색엔진의 만족도는 어느정도 인가요?<br/>
+                        <input type="radio" name="select4"/>매우만족
+                        <input type="radio" name="select4"/>만족
+                        <input type="radio" name="select4"/>보통
+                        <input type="radio" name="select4"/>불만족
+                        <input type="radio" name="select4"/>매우불만족
+                    </li>
+                </ol>
+            </fieldset> <!-- 만족도 조사 END -->
+            <br/>
+            <!-- 건의 사항 시작 -->
+            <fieldset class="setBack2">
                 <legend><h3>건의사항</h3></legend>
-                <textarea rows="10" cols="110" placeholder="불편한 사항이나 기타 건의사항을 입력해주세요."></textarea>
-            </fieldset>
-        <p> 
+                <textarea rows="10" cols="106" placeholder="불편한 사항이나 기타 건의사항을 입력해주세요."></textarea>
+            </fieldset> <!-- 건의 사항 END -->
+            <br/>
+            <!-- 연도 / 시간 / 제출 / 초기화 시작 -->
             <input type="date"> 
             <input type="time">
-        </p>
-        <p class="last">
-            <input type="submit">
-            <input type="reset">
-        </p>
-    </form>
+        
+            <input type="submit" class="subMargin"/>
+            <input type="reset" />
+            <!-- 연도 / 시간 / 제출 / 초기화 END -->
+        </form>     <!-- 폼 form END -->
+        
+    </div>  <!-- form 폼 div 박스 END-->  
+</div>  <!-- 랩 WRAP END -->
 </body>
 </html>

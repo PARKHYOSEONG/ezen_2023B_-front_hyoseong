@@ -1,0 +1,116 @@
+/* 
+    어디의{무엇을: 어떻게; 무엇을: 어떻게;}
+    1. 어디의[선택자]
+        1) * 2) 마크업 3).class 4)#id
+*/
+
+.box1{border: 1px solid red;}
+/* {border:두께 선의종류 색상; */
+
+.box2{
+    border-top: 1px solid blue; /* solid : 실선 */
+    border-right: dotted 1px orange; /* dotted : 점선 */
+    border-bottom: double 3px red; /* double : 이중선 */
+    border-left: dashed 4px black; /* dashed : 파선 */
+}
+
+.box3{
+    border: solid 2px red; 
+    border-radius: 50px;    /* 둥근 모서리 */
+}
+
+.box4{
+    border: solid 2px blue;
+    padding: 10px;          /* padding : 안쪽 여백 */
+    margin: 20px;           /* margin : 바깥 여백 */
+}
+
+.box5{
+    border: solid 1px pink;
+    padding-top: 20px;      /* 위 안쪽 여백 */
+    padding-right: 30px;    /* 오른쪽 안쪽 여백 */
+    padding-bottom: 40px;   /* 아래 안쪽 여백 */
+    padding-left: 50px;     /* 왼쪽 안쪽 여백 */
+    
+    margin-top: 50px;       /* 위 바깥 여백 */
+    margin-right: 60px;     /* 오른쪽 바깥 여백 */
+    margin-bottom: 70px;    /* 아래 바깥 여백 */
+    margin-left: 80px;      /* 왼쪽 바깥 여백 */
+}
+
+.box6{
+    border: solid 1px black;
+    padding: 10px 20px 30px 40px;
+    /* 위 오른쪽 아래 왼쪽의 안쪽 여백, 시계방향 */
+    padding: 10px 20px;
+    /* 위+아래 왼쪽+오른쪽의 안쪽여백 */
+    padding: 10px;
+    /* 위+오른쪽+아래+왼쪽의 안쪽여백 */
+
+    margin: 10px 20px 30px 40px;
+    /* 위 오른쪽 아래 왼쪽의 안쪽 여백, 시계방향*/
+    margin: 10px 20px;
+    /* 위+아래 왼쪽+오른쪽의 안쪽여백 */
+    margin: 10px
+    /* 위+오른쪽+아래+왼쪽의 안쪽여백 */
+}
+
+.box7{
+    width: 200px; /* 가로 사이즈 */
+    height: 200px; /* 세로 사이즈 */
+    box-sizing: border-box; 
+    /* border+padding을 사이즈 포함 */
+    /* box-sizing: content-box;     200+20+20+10+10 => 260px  사이즈를 포함시키지 않음 (커짐) */
+    /* box-sizing: border-box;      200 => 200px              사이즈를 포함 (작아짐) */
+    padding: 20px;
+    border: solid 10px red;
+
+    /* 내용(content) 가운데정렬 */
+    text-align: center;
+    /* 박스(box) 가운데정렬 */
+    margin: 0 auto;
+}
+
+    
+div{
+    border: solid 1px red;
+    margin: 20px;
+    background-color: blanchedalmond;
+}
+span{
+    background-color: orange;
+}
+
+.s1{
+    display: inline; /* 인라인 : span 기본값 */
+    width: 200px; height: 200px; /* 가로,세로 사이즈 적용불가 */
+}
+.s2{
+    display: block; /* 블록 */
+    width: 200px; height: 200px; /* 가로, 세로 사이즈 적용가능 */
+}
+.s3{
+    display: inline-block; /* 인라인-블록 */
+    width: 200px; height: 200px;
+}
+.s4{
+    display: none; /* 숨기기 */
+    width: 200px; height: 200px;
+}
+
+.d1{
+    display: inline;
+    width: 200px; height: 200px;
+}
+.d2{
+    display: block;
+    width: 200px; height: 200px;
+}
+.d3{
+    display: inline-block;
+    width: 200px; height: 200px;
+}
+.d4{
+    display: none;
+    width: 200px; height: 200px;
+}

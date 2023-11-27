@@ -1,0 +1,51 @@
+body{
+    padding: 10px 200px;
+}
+div{
+    border: solid 1px gray;
+    margin: 10px 210px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.img{
+    width: 250px;
+    margin: 0 100px;
+   }
+
+.id{
+    width: 250px;
+    height: 30px;
+    margin: 0 100px;
+}
+.pw{
+    width: 250px;
+    height: 30px;
+    margin: 0 100px;
+    }
+
+.login{
+    width: 250px;
+    margin: 0 100px;
+    background-color: rgb(0, 149, 246);
+    color: white;
+    border-radius: 5px;
+}
+
+.facebook{
+margin: 0 120px;
+text-decoration: none;
+}
+
+.forget{
+    color: navy;
+    font-size: 12px;
+    margin: 0 150px;
+    text-decoration: none;
+}
+.join{
+    color: rgb(0, 149, 246)
+}
+
+.text1{
+    margin-left: 100px;
+}

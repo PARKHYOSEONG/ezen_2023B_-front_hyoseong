@@ -1,0 +1,19 @@
+
+.number{
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.cont1{
+    background-color: #36bc9b;
+    padding: 20px;
+}
+
+.impor1{
+    color: orange;
+}

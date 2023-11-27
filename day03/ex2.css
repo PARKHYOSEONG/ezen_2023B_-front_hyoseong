@@ -1,0 +1,32 @@
+.title1{
+    border-left: solid 5px green;
+    padding-left: 8px;
+}
+
+ul{
+    background-color: lightgray;
+    border: solid 2px gray;
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px 50px;
+    
+}
+
+div{
+    border: solid 2px gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 530px;
+}
+
+.edu1{
+    border-bottom: dotted 1px;
+    padding-bottom: 30px;
+}
+
+.link{
+    text-align: right;
+}
+
+/* 선택자 활용 */

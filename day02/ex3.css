@@ -1,6 +1,20 @@
-@charset "utf-8";
+/* 전체 몸통 가로 세로 크기 조절 및 가운데 정렬 */
+.wrap{ width: 800px; height: 800px; margin: 0 auto;}
 
-.last{
-    text-align: right;
-}
+/* 맨 아래 input submit 과 reset 버튼 오른쪽 이동 */
+.subMargin{ margin-left: 420px;}
 
+/* 로고 이미지 가운데 정렬 */
+h1{ text-align: center;}
+
+/* 로고 박스 부분 백그라운드 */
+.logoBox{background-color:white ;}
+
+/* 검색엔진 만족도 조사 부분 백그라운드 */
+.setBack1{background-color: rgb(248, 194, 220);}
+
+/* 건의사항 부분 백그라운드  */
+.setBack2{background-color: rgb(248, 194, 220)}
+
+/* 검색엔진 만족도 , 건의사항 부분  - 위치 조정 , 폰트 크기 , 진하게 변경  */
+legend{text-align: center; font-size: 16px; font-weight: bold;}
