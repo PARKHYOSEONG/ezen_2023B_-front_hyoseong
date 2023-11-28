@@ -1,0 +1,76 @@
+h2{
+    text-align: center;
+}
+
+div{
+    border: solid 1px gray;
+    width: 550px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+p{
+    margin: 20px 20px;
+}
+
+.idpw{
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.radio{
+    margin-left: 83px;
+}
+
+.login{
+    display: block;
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    margin: 0 auto;
+
+}
+#or{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid gray;
+    width: 80%;
+}
+.qr{
+    display: block;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+.user{
+    text-align: right;
+}
+.copy{
+    color: lightgray;
+    text-align: center;
+}
+#infor{
+    color: gray;
+    font-weight: bold;
+}
+#under{
+    border: none;
+}
+.Kakao{
+    font-weight: bold;
+}
