@@ -106,3 +106,313 @@
     display: flex;
     padding-bottom: 10px;
 }
+
+
+
+
+.title{
+    display: flex;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 30px auto;
+}
+
+#top{
+    display: flex;
+    
+}
+#top li{
+    margin: 12px;
+}
+
+#title1{
+    color: blue;
+    text-align: bold;
+ }
+
+#qwe{
+    text-align: center;
+    width: 1280px;
+}
+
+#main_3{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+.stdio{
+    background-image: url(img/sub_intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 3px;
+    color: white;
+    text-align: center ;
+      
+    width: 1280px;
+}
+
+.introText{
+    padding: 80px 0;
+    
+}
+.introName{
+    font-weight: bold;
+    margin: 5px; 
+
+}
+.img1, .img2{
+    width: 450px;
+    margin: 20px 15px 20px 15px;
+}
+
+.main1, .main2{
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.t1{
+    padding: 10px 0 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.main2{
+    background-color: #e8e8e8;
+}
+.t2, .tx1, .tx2{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mainTx1, .mainTx2{
+    padding: 20px 0px;   
+}
+
+.mainTx1{
+    margin-left: 20px;
+}
+
+.pt1,.pt2{
+    line-height: 120%;
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+}
+.page2{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+}
+
+#footer{
+    background-color: #292C32 ;
+    
+}
+#footer{
+    display: flex;
+  
+}
+
+
+
+
+
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+/* 헤더 시작 */
+#header_3{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerLeft{
+    padding: 10px;
+    margin-left: 100px;
+}
+#headerLeft h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+#headerLeft h1 span{
+    color: #8097D1;
+    font-size: 25px;
+}
+
+#headerRight ul li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.headerNavRight{
+    margin-right: 100px;
+}
+
+/* 헤더 끝 */
+/* 중앙 content 크기 및 센터 이동 */
+#content_3{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 중앙 스튜디오 예약 백그라운드 이미지 삽입 */
+#contentBimg{
+    width: 1280px;
+    text-align: center;
+    background-image: url(img/sub_reservation.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 50px 0px;
+    margin-bottom: 40px;
+}
+/* 중앙 스튜디오 예약 백그라운드 글자 수정 H3 */
+#contentBimg h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+/* 중앙 스튜디오 예약 백그라운드 글자 수정 P */
+#contentBimg p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* 콘텐츠 왼쪽 박스 오른쪽 박스 중앙 나란히 정렬 */
+#calendarWrap{
+    display: flex;
+    justify-content: center;
+}
+/* 왼쪽 박스 사이즈 밑 백그라운드 지정 */
+#contentCalendar{
+    width: 580px;
+    background-color: #FCF9EA;  
+    padding-top: 10px;
+}
+/* 날짜 선택 부분 텍스트 정렬 및 폰트 수정 H4 */
+#CalendarTop h4{
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+/* 날짜 선택 부분 텍스트 정렬 및 폰트 수정 P */
+#CalendarTop p{
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+/* 왼쪽 컨텐츠 부분 달력 시작 */
+#CalendarBottom{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#CalendarBottom table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#CalendarBottom table, th, td{
+    border: 1px solid black;
+    color: blue;
+    font-size: 14px;
+}
+#CalendarBottom table th{
+    color: black;
+    font-weight: 600;
+    vertical-align : middle;
+    height: 30px;
+    background-color: #EEEEEE;
+}
+.textRed{
+    color: red;
+}
+/* 왼쪽 컨텐츠 달력 박스 끝 */
+/* 오른쪽 컨텐츠 박스 시작 */
+#contentGuide{
+    width: 380px;
+    padding: 20px;
+}
+#contentGuide h3{
+    font-size: 16px;
+    font-weight: 800;
+    border-left: 8px solid gray;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+#contentGuide ul{
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+#contentGuide ul li{
+    line-height: 1.6;
+    font-size: 14px;
+}
+#contentGuide p{
+    color: #008000
+}
+/* 오른쪽 컨텐츠 박스 끝 */
+
+/* footer 시작 */
+#footer_3{
+    background-color: #292C32;
+    display: flex;
+}
+
+#footer_rwap3{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_rwap3 div h4{
+    color: white;
+    font-size: 14px;
+    margin-top: 25px;
+    font-weight: 600;
+    line-height: 1.6;
+    padding-left: 50px;
+}
+#footer_rwap3 div p{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 50px;
+}
+
+#footer_rwap3 ul li{
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 25px;
+    font-size: 14px;
+}
+#footer_rwap3 div address{
+    color: white;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.2;
+    padding-bottom: 50px;
+}
+#footer_rwap3 div img{
+    display: inline-block;
+    margin-top: 20px;
+}
