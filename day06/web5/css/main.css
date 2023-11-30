@@ -1,0 +1,119 @@
+/* *{
+    border: 2px solid red;
+    padding: 5px;
+    margin: 2px;
+} */
+
+/* 
+    기본 여백 제거
+    1. 직접 제거
+    2. css/cdn
+*/
+
+*{padding: 0; margin: 0; list-style-type: none;}
+a{color: black; text-decoration: none;}
+
+body{background-color: #F5F6F7;}
+/* #wrap{background-color: #F5F6F7;} */
+
+#wrap{width: 400px; margin: 0 auto;}
+
+/* ======== 헤더 ======== */
+/* #header{width: 500px; margin: 0 auto;} */
+    #headerLogo{text-align: center; margin: 50px 0px;}
+        #headerLogo img{height: 50px;}
+
+
+/* ======== 본문 ======== */
+.inputBox{
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; /* 세로 정렬 */
+}
+
+    .inputBox input, select{
+        border: none;
+        background-color: white;
+        height: 30px; width: 100%;
+    }
+
+    .inputBox span{
+        color: #aeaeae; 
+    }
+
+
+/* 호버  : 마우스를 올렸을 때
+포커스 : 커서가 깜빡거림 [선택] */
+*:focus{outline: none;} 
+
+/* #main{width: 500px; margin: 0 auto;} */
+h5{margin: 20px 0px 5px 0px;}
+
+/* 배경 이용해서 아이콘 넣기 */
+.inputIcon{
+    width: 25px; height: 25px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    /* background-position: left top; 세부 조정불가 */
+    background-size: 120px 75px;
+}
+
+#pwIcon{
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+#pwconfirmIcon{
+    background-position-x: -75px;
+    background-position-y: 0px;
+}
+
+#birthBox{display: flex; justify-content: space-between;}
+.birthY, .birthM, .birthD{width: 100px;}
+
+.titleAt{
+    font-size: 10px; color: #aeaeae;
+}
+
+#phoneBox{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+/* 
+    phoneBox input : 자손
+    phoneBox > input : 자식
+*/
+
+
+#phoneBox > input{
+    background-color: #03C75A;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+}
+
+#phoneBox > div{width: 250px;}
+
+#inputAuth, #inputAuth > input{
+    background-color: aeaeae;
+}
+
+#signupBtn{
+    background-color: #03C75A;
+    border: none;
+    color: white;
+    width: 100%; height: 50px;
+    font-size: 20px; font-weight: bold;
+    margin: 50px 0px;
+}
+
+/* ======== 푸터 ======== */
+#footerBox{text-align: center; margin-bottom: 50px;}
+#ftTop{font-size: 8px; color: #aeaeae;}
+#ftBottom img{height: 10px;}
+#ftBottom span{font-size: 5px;}
