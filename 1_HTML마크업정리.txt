@@ -12,7 +12,7 @@ HTML : 하이퍼텍스트 마크업 언어( HyperText Markup Language )
         <!-- 주석 -->
         범위 지정 : ctrl+/
 
-마크업 종류 
+마크업 종류 1
 1. <h1> ~~ <h6>
     - 제목 마크업
 2. <p>
