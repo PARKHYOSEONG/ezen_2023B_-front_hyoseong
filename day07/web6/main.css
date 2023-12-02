@@ -1,0 +1,172 @@
+/* *{border: 2px solid red; padding: 10px;} */
+
+/* =========== 공통 부문 =========== */
+*{
+    padding: 0px; margin: 0px;      /* 1. 기본 여백 제거 */
+    font-family: 굴림;              /* 2. 폰트 [웹 폰트] */
+    font-size: 12px;
+    box-sizing: border-box;         /* 3. 안쪽여백, 테두리를 포함한 사이즈 모델 */
+}
+a{color: black; text-decoration: none;} /* 4. a태그의 색상, 밑줄 제거 */
+li{list-style-type: none;}           /* 5. 글머리 제거 */
+
+/* =========== 헤더 =========== */
+
+/* 상단 메뉴 */
+#topMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* 가로정렬 -> 오른쪽 */
+    align-items: center;
+    padding: 10px; margin-right: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+    #topMenu > li > span{padding: 0px 5px;}
+
+    /* 메인메뉴 */
+#mainMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky; top: 0px; /* 스크롤 사용시 위치 고정 */
+    /* sticku 주의할점 [전제조건]
+        1. 상위요소의 높이 사이즈 안에서 고정
+        2, 위치속성 1개 이상 필수 ! : top, bottom, left, ringt
+        3. 상위 요소가 overflow 속성 사용금지
+    */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 해당 구역 전체 투명도 */
+   /*  opacity: 0.8;  */
+}
+    #mainMenu > ul{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 18px;
+        width: 1100px;
+        align-items: center;
+    }
+
+    #mainMenu > form{border-bottom: 1px solid black;}
+    #mainMenu > form > input{border: none; padding: 10px; font-size: 16px;
+    background-color: transparent; /* transparent : 투명색 */}
+    *:focus{outline: none;} /* 커서가 있을때 아웃라인 제거 */
+    #mainMenu > form > img{height: 20px;}
+
+#mainMenu > ul > li{position: relative;}
+#mainMenu > ul > li:hover .subMenu{display: block;}
+
+/* 드랍 메뉴 */
+.subMenu{
+    display: none;
+    position: absolute;
+    top: 15px; left: -30px;
+    background-color: white;
+    padding-top: 25px; width: 100px;
+}
+.subMenu li{text-align: center; margin-bottom: 10px;}
+.colorRed{color: red;}
+
+/* =========== 본문 =========== */
+#mainImg{width: 100%;}
+#mainWrap{width: 1620px; margin: 100px auto;}
+
+#mainWrap .title{
+    font-size: 20px; font-weight: bold;
+    text-align: center;
+}
+
+#mainWrap .comment{
+    text-align: center; color: #999999;
+    margin-top: 20px;
+}
+#mainWrap .items{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* 자리가 부족하면 줄 바꿈 */
+    justify-content: space-between;}
+
+.item{
+    /* 한줄에 4개씩 배치 -> 부모사이즈/4 */
+    width: 370px;
+    margin-bottom: 100px;
+}
+
+.item > img{ width: 100%;}
+.colorReview{
+    display: flex ; justify-content: space-between;
+    padding: 5px;
+}
+
+.colorReview > .color > span{
+    width: 10px; height: 10px;
+    display: inline-block;
+    border: 1px solid #ededed;
+}
+
+
+.nameSize{margin: 10px 0px 20px 0px;}
+.nameSize .prdSize{font-size: 11px color#999999;}
+/* 
+자손선택자 : 상위선택자 하위선택자
+자식선택자 : 상위선택자 > 하위선택자
+*/
+.price del{color: #999999;}
+.price{position: relative; margin-bottom: 10px;}
+.price > .discount{
+    position: absolute;
+    right: 0px; top: 0px;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/* =========== 푸터 =========== */
+#footer{
+    background-color: #f7f7f7;
+    height: 300px;
+}
+#footer #inner{
+    width: 1400px; margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px 70px 0px;
+}
+#footer #inner h3{font-size: 16px; margin: 10px 0px;}
+#addr{text-align: center; margin: 20px 0px 50px 0px; color: #999999;}
+
+
+#popup{ /* 팝업 전체 구역 */
+    position: fixed;
+    right: 0px; top: 50%;
+}
+
+#popup > li{
+    width: 30px; height: 30px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 5px;
+    position: relative;
+}
+
+#popup > li > img{height: 20px;}
+
+#popup > li > span{
+    position: absolute;
+    top: 5px; right: 30px;
+    font-size: 10px;
+    width: 70px; height: 13px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+#popup > li:hover .popupSub{
+    display: block;
+}
