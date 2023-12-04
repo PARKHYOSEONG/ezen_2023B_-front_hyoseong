@@ -1,0 +1,157 @@
+/* p.136 */
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 18px; color: #121212;}
+
+/* header -> nav -> ul */
+.ffJosefin{font-family: 'Josefin Sans', sans-serif;}
+
+/* p.138 */
+.innerWrap{width: 1240px; margin: 0 auto; padding: 80px 20px 0;}
+
+/* p.139 letter-spacing : 자간 */
+    main h2{ text-align: center; font-size: 60px;
+    letter-spacing: 0.05em; margin-bottom: 80px;}
+
+/* p. 140 */
+header{background: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    /* background: url(../images/hero.jpg) no-repeat right center/cover; */
+}
+
+/* p. 142 */
+header .innerWrap{height: 720px; position: relative;}
+
+/* p. 142 */
+header h1{padding-top: 120px;}
+
+/* p. 143 */
+header .scroll{position: absolute; left: 0; bottom: 0;
+    width: 100%; text-align: center; font-size: 16px;}
+/* header .innerWrap 기준점 (position: relative;) */
+
+header .scroll img{margin-top: 8px;}
+
+/* z-index : 메뉴가 항상 앞에 나오도록 */
+header nav{position: fixed; top: 0; left: 0; width: 100%; z-index: 100;}
+
+header nav ul{display: flex; justify-content: space-around;
+    width: 1240px; margin: 0 auto; padding: 10px 20px;}
+
+header nav ul li a:hover{text-decoration: underline;}
+
+.msgSec{background-color: #fbfaf7;}
+.msgSec p {text-align: center; line-height: 1.75; margin-bottom: 40px;}
+
+/* p요소의 클래스명이 .illust이면 적용 */
+.msgSec p.illust{margin-top: 80px; margin-bottom: 0; position: relative;}
+/* .illust{ } 전체요소의 class명이 illust이면 적용 */
+
+/*  !important > style > id > class > 타입
+    1. !important 가장 강한 덮어쓰기
+    2. HTML에 Style 속성
+    3. ID선택자 #id=""
+    4. 클래스 선택자 .class=""
+    5. 타입 선택자 ex) p{ }, li{ } 
+    6. 와일드카드 *{ }
+*/
+
+/*  가상 요소 선택자
+    HTML에 없던 내용을 [주로 텍스트나 이미지] CSS에서 넣어주기가 가능한 속성
+    ::before : 요소의 앞부분에 내용을 가상으로 넣어주기
+    ::after : 요소의 뒷부분에 내용을 가상으로 넣어주기
+        content : 가상 요소의 내용물
+*/
+.msgSec p.illust::before{content: url(../images/deco_left.png); position: absolute;
+    left: 320px; bottom: -30px;}
+.msgSec p.illust::after{content: url(../images/deco_right.png); position: absolute;
+    right: 320px; bottom: -30px;}
+
+.dateSec{background-color: #ffffff; padding-bottom: 120px;}
+
+.dateSec .layoutWrap{display: flex;}
+.dateSec .layoutWrap > p{flex-basis: 735px;}
+.dateSec .layoutWrap > div{flex-basis: 465px; padding-top: 100px;}
+
+.dateSec .dateDetailSec{font-size: 72px; margin: 0 0 170px -100px;
+    background-color: #ffffff; padding: 40px 64px; line-height: 1.2;}
+
+/*  flex-basis: 465px;
+    width: 465px;
+    1. 차이점 : flex-direction: colums; 일때
+                width : 고정 flex-basis : 전체 사이즈 늘어남
+    2. 요소보다 더 큰 컨텐츠가 들어왔을때
+                width : 고정 flex-basis : 같이 늘어남
+*/
+
+.world1{font-size: 50px;}
+.world2{font-size: 40px;}
+.world3{font-size: 60px;}
+
+.accessSec{margin-left: 48px;}
+.accessSec h3{color: #cfafa3; font-size: 55px; letter-spacing: 0.05em;
+margin-bottom: 8px;}
+.accessSec p{line-height: 1.6;}
+
+.formSec{background-color: #efe8d9; padding-bottom: 60px;}
+form{width: 600px; margin: 0 auto;}
+
+/* 요소[속성명=값] */
+input[type="text"], input[type="email"], select, textarea{
+    border: 1px solid #cccccc; background-color: #ffffff;
+    width: 100%; margin-top: 5px; padding: 4px 8px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: 16px; height: 16px;
+    vertical-align: baseline; margin-right: 4px;
+}
+
+.attendRadio{text-align: center; margin-bottom: 40px;}
+.attendRadio label{margin: 0 20px; font-size: 24px;}
+.allergyCheck label{margin-right: 24px;}
+
+select{background: #ffffff url(../images/arrow.png) no-repeat 98% 50%/17px 10px}
+
+textarea{height: 148px; margin-bottom: 30px;}
+form > p{line-height: 1.4; margin-bottom: 20px;}
+
+.submitBtn{text-align: center;}
+input[type="submit"]{ background-color: #121212; color: #ffffff; padding: 18px 80px;}
+
+footer{background-color: #c7887f; color: #f3e9e5;
+    padding: 14px 10px 20px; text-align: center;}
+
+/* 패럴랙스 효과 */
+.dateSec{margin-bottom: 480px;} /*  배경이 보여질 여백 만들기 */
+.dateSec::after{content: ""; /* 배경을 넣을 예정이라서 내용물은 없는 상태 */
+    position: fixed; left: 0; top: 0; /* 스크롤을 움직여도 고정 */
+width: 100%; height: 100%; /* 화면에 가득 채우기 */
+background: url(../images/bg.jpg) no-repeat center/cover; z-index: -1;
+/* z-index : 기본 요소들보다 아래에 배치 */
+}
+
+/* 트랜지션 애니메이션 효과 */
+input[type="submit"]:hover{ /* 마우스를 올렸을때 */
+    background-color: #c7887f; 
+    margin-left: 20px;
+    transition-property: background-color,margin-left; /* 또는 all */
+    transition-duration: 300ms; /* 0.3초 */
+    transition-timing-function: ease-in; /* 시작 천천히 끝 빨리 */
+    transition-delay: 0ms; /* 지연 시간 없음 */
+}
+
+/* 키 프레임 애니메이션 효과 */
+@keyframes scrollAnimation{ /* @keyframes 사용할 애니메이션 명 */
+    0%{transform: scaleY(0); transform-origin: top;} /* 시작점 스크롤 위치가 0 */
+    50%{transform: scaleY(1); transform-origin: top;} /*  가운데 스크롤 위치가 50 */
+    50.1%{transform: scaleY(1); transform-origin: bottom;} /* 가운데 스크롤 위치가 50.1 */
+    100%{transform: scaleY(0); transform-origin: bottom;} /* 종료점 스크롤 위치가 100 */
+}
+
+header .scroll img{
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
