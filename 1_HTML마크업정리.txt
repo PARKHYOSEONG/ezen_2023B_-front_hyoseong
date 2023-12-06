@@ -12,7 +12,7 @@ HTML : 하이퍼텍스트 마크업 언어( HyperText Markup Language )
         <!-- 주석 -->
         범위 지정 : ctrl+/
 
-마크업 종류 1
+마크업 종류 
 1. <h1> ~~ <h6>
     - 제목 마크업
 2. <p>
@@ -122,7 +122,7 @@ HTML : 하이퍼텍스트 마크업 언어( HyperText Markup Language )
             - 값은 최소 길이 , 최대길이 
 
         9. multiple
-            - [type='file'] 일때 여러개 첨부
+            - [type='file'] 일때 여러개 첨부ㅈ
             
         10. checked
             - [type='radio'] 일때 체크상태
