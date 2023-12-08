@@ -89,27 +89,17 @@ document.write(max); */
 
     // 첫번째 자리 비교 [비교 2번]
     let temp=num11>num12? num12: num11;     // num12 -> temp
-    //      5      7   5     *5      7
     num12=num11>num12? num11: num12;          // num11 -> num12
-   // 7       7   5       *7       5
     num11=num11>num12? temp: num12;          // temp -> num11
-   //   7     7     7   5       *7
-   
 
     temp=num11>num13? num13: num11;
-   //  7      7   9       9       *7
     num13=num11>num13? num11: num13;
-    //   9     7   9       7   *9
     num11=num11>num13? temp: num11;
-   //   7    7   9      7       *7
 
     // 두번째 자리 비교 [비교 1번]
     temp=num12>num13? num13: num12;
-    //   7    7        9       9   7
     num13=num12>num13? num12: num13;
-    //  9      7       9   7       9
     num12=num12>num13? temp: num12;
-    //  7     7     9       7      7
 
      /*  num11 5
       num12 7
@@ -160,18 +150,28 @@ document.write(max); */
       플레이어2 이겼을때 경우의수 ' 플레이어2 승리 ' 출력
       비겼을경우 '무승부' 출력 */
 
-/*       let player1 = Number(prompt('플레이어1'))
+      let player1 = Number(prompt('플레이어1'))
       let player2 = Number(prompt('플레이어2'))
       let answer = player1==player2 ? 
                           '무승부' :  player1==(player2+1)%3 ? 
                                       '플레이어1 승리' :  '플레이어2 승리';
-      console.log( answer ) */
+      console.log( answer )
 
       /* 
-        플레이어1 이기는 경우의 수
-            플레이어1 == 가위일때 플레이어2 == 보
-            플레이어1 == 바위일때 플레이어2 == 가위
-            플레이어1 == 보일때 플레이어2 == 바위
+        플레이어1 이기는 경우의수 
+        플레이어1 == 0 일때  플레이어2 == 2
+        플레이어1 == 1 일때  플레이어2 == 0
+        플레이어1 == 2 일때  플레이어2 == 1
 
-            (플레이어1 == 0 && 플레이어2 ==)
+        (플레이어1 == 0 && 플레이어2 == 2) || 
+        (플레이어1 == 1 && 플레이어2 == 0) ||
+        (플레이어1 == 2 && 플레이어2 == 1)
+
+        플레이어2 == 2+1 = 3  => 3%3 == 0
+        플레이어2 == 0+1 = 1  => 1%3 == 1
+        플레이어2 == 1+1 = 2  => 2%3 == 2
+        
+        player1==(player2+1)%3 
+
+        그외 졌다.
       */
