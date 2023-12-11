@@ -7,9 +7,9 @@
     1. HTML 마크업 정보를 js변수로 가져오는 함수.
             document.querySelector ('마크업 또는 #id명 또는 .class명')
     2. .value 속성 값 가져오기
-            document.querySelector ('마크업 또는 #id명 또는 .class명')
+            document.querySelector ('마크업 또는 #id명 또는 .class명').value
     3. .innerHTML 속성
-            document.querySelector ('마크업 또는 #id명 또는 .class명')
+            document.querySelector ('마크업 또는 #id명 또는 .class명').innerHTML="출력 하고싶은 문자열"
 */          
 
 /* 
@@ -101,20 +101,55 @@
         let value1=Number(document.querySelector('#input1').value);
         // [처리]
         if (value1>=90){result="A등급"}
-        else if(value1<90&&value1>=80){result="B등급"}
-        else if(value1<80&&value1>=70){result="C등급"}
+        else if(value1>=80){result="B등급"}
+        else if(value1>=70){result="C등급"}
         else{result="재시험"}
         // [출력]
         document.querySelector('#result').innerHTML=`${result}`
     }
+
 /*문제 6: 아이디[입력값1] 와 비밀번호[입력값2] 입력받기 
                    회원아이디가 admin 이고 비밀번호가 1234 이면 로그인 성공 출력 아니면 로그인실패 출력
 */
     function 문제6함수(){
         //  [입력]
-        let value=document.querySelector('#input1').value;
-        let value=document.querySelector('#input2').value;
+        let id=document.querySelector('#input1').value;
+        let pw=document.querySelector('#input2').value;
+
         //  [처리]
+        if(id=="admin"&&pw=="1234"){result="성공"}
+        else{result="실패"}
+
+        //  [출력]
+        document.querySelector('#result').innerHTML=`${result}`
     }    
 //문제 7 : 3개의 정수[입력값1/2/3] 를 입력받아서 오름차순 / 내림차순 출력 
+    function 문제7함수(){
 
+        //  [입력]
+            let value1 = Number(document.querySelector('#input1').value); console.log(value1);
+            let value2 = Number(document.querySelector('#input2').value); console.log(value2);
+            let value3 = Number(document.querySelector('#input3').value); console.log(value3);
+
+        //  [처리]
+
+            if (value1>value2){
+                let temp=value1;
+                value1=value2;
+                value2=temp;
+            }
+            if(value1>value3){
+                let temp=value1;
+                value1=value3;
+                value3=temp;
+            }
+            if (value2>value3){
+                let temp=value2;
+                value2=value3;
+                value3=temp;
+            }
+            result=`${value1}${value2}${value3}`
+            
+            //  [출력]
+        document.querySelector('#result').innerHTML=`${result}`
+}
