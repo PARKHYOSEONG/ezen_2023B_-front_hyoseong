@@ -8,6 +8,21 @@
     <script src='step1.js'></script>
 </head>
 <body>
-    
+    <div style="display: flex;">
+        <div style="width: 50%; border: 1px solid black;">
+            <h3>회원 가입 : 배열내 값 저장</h3>
+            Sign ID : <input id="signId" type="text"/>          <br/>
+            Sign PW : <input id="signPw" tpye="text"/>          <br/>
+            <input onclick="sign()" type="button" value="가입"/>
+                    <!-- onclick : 클릭했을때 sign() 함수 호출 -->
+        </div>
+        <div style="width: 50%; border: 1px solid black;">
+            <h3>회원 로그인 : 배열내 값 확인</h3>
+            Login ID<input id="loginId" type="text"/>            <br/>
+            Login PW<input id="loginPw" type="text"/>            <br/>
+            <input onclick="login()" type="button" value="로그인"/>  
+                    <!-- onclick : 클릭했을때 login() 함수 호출 -->   
+        </div>
+    </div>
 </body>
 </html>
