@@ -198,23 +198,16 @@ console.log(output); */
 function 문제9_2(){
     // [입력]
         const line9_2=Number(document.querySelector('#line9_2').value);
-
-    // [처리]
         let html='';
-
-            // [행]
-            for(let a=1; a<=line9_2; a++){                  // for 1 start
-            
-                // [행 시작]
-                html+=`<tr>`
-
-            // [열]                                              
-                for(let r=1; r<=line9_2; r++){
-                    if (){html+=`<td>★</td>`;
-                }                                              
-                html +='</tr>';
-            }                                           // for 1 end
-
+            for(let a=1; a<line9_2-2; a++){html+=`<tr>`;
+                for(let b=1; b<line9_2-a-2; b++){html+=`<td> </td>`;}
+                for(let c=0; c<a*2-1; c++){html+=`<td>★</td>`;}
+            html +='</tr>';}
+            for(let d=line9_2-3; d>1; d--){html+=`<tr>`;
+                for(let e=1; e<line9_2-d-1; e++){html+=`<td> </td>`;}
+                for(let f=0; f<d*2-1-2; f++){html+=`<td>★</td>`;}
+            html +='</tr>';}
+       
         const tableObj=document.querySelector('#table9_2');
         tableObj.innerHTML=html;
         console.log(tableObj);
