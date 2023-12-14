@@ -201,7 +201,7 @@ function 문제9_2(){
         let html='';
             // 가운데 기준 위 별
             for(let a=1; a<=line9_2/2-0.5; a++){html+=`<tr>`;
-                for(let b=1; b<=line9_2/2-a+1; b++){html+=`<td>☆</td>`;}
+                for(let b=1; b<=line9_2/2-a+1; b++){html+=`<td> </td>`;}
                 for(let c=1; c<=a*2-1; c++){html+=`<td>★</td>`;}
             html +='</tr>';}
             // 가운데 별
@@ -210,7 +210,7 @@ function 문제9_2(){
             }
             // 가운데 기준 아래 별
             for(let d=line9_2/2-0.5; d>=1; d--){html+=`<tr>`;
-                for(let e=1; e<=line9_2/2-d+1; e++){html+=`<td>☆</td>`;}
+                for(let e=1; e<=line9_2/2-d+1; e++){html+=`<td> </td>`;}
                 for(let f=1; f<=d*2-1; f++){html+=`<td>★</td>`;}
             html +='</tr>';}
        
