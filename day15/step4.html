@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step4.css'>
+    <script src='step4.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <div><h1>가계부</h1></div>
+        <div id="top">
+            <div id="input">
+                날짜 : <input id='date' type="date"><br/>
+                항목 : <input id='title' type="text" /><br/>
+                금액 : <input id='pay' type="text"/>
+            </div>
+            <div><input onclick='submit()' id="submit" type="button" value="등록"/></div>
+        </div>
+        <div id="table">
+            <div class="tt">
+                <div>날짜</div>
+                <div>항목</div>
+                <div>금액</div>
+                <div>비고</div>
+            </div>
+            <div id="bottom">
+            <!-- 함수 들어올 예정 -->
+            </div>
+        </div>
+        <div id="sumBox">
+            <div id="sum">총합계:</div>
+            <div id="sumlist"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--                 
+<div class="td">
+<div class="btDate"></div>
+<div class="btTitle"></div>
+<div class="btPay"></div>
+<div class="delete"></div>
+</div>
+-->

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 공통CSS */
+*{box-sizing: border-box;
+font-size: 16px;
+font-family: 'PyeongChangPeace-Bold';}
+
+#wrap{width: 300px; margin: 0 auto;}
+
+#todoTop{display: flex; height: 40px;}
+#content{
+    width: 250px; padding: 10px;
+    border: none; box-shadow: 0px 0px 3px #d68585;}
+
+#todoTop > input[type='button']{ /* 마크업 속성을 이용한 선택자 */
+    width: 50px; padding: 10px; cursor: pointer;
+    border: none; box-shadow: 0px 0px 3px #d68585;}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px; font-weight: bold;
+    margin: 20px 1px; padding: 5px 10px;
+    background-color: #fcecec;}
+
+.todo > .btnBox > input{
+    font-size: 12px; cursor: pointer;
+    border: none; box-shadow: 0px 0px 3px #d68585;}
+
+.success{background-color: #6c6c6c;}
+.success > .content{text-decoration: line-through; color: white; }

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'PuradakGentleGothicR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'PuradakGentleGothicR';
+}
+
+#wrap{width: 500px; margin: 0 auto;}
+
+#top{display: flex; justify-content: space-between;
+    height: 100px; align-items: center;}
+
+#submit{width: 100px; height: 60px;}
+
+#table, #top, #sumBox, .tt{margin: 30px 0px 30px 0px;}
+
+.tt, .td{display: flex; justify-content: space-between; width: 500px; height: 30px;}
+
+.tt{padding: 0px 20px 0px 20px; width: 500px;}
+.tt > div{width: 50px; text-align: center; font-size: 20px;}
+
+.td{padding: 0px 20px 0px 20px; width: 500px;}
+.td > div{width: 50px; text-align: center; font-size: 15px;}
+
+#sumBox{display: flex; justify-content: space-around;}
+#sum{height: 60px; text-align: center; font-size: 25px;}
