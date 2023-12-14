@@ -65,19 +65,15 @@ function print(){
                 <div>${payList[i]}</div>
                 <input onclick="listDelete(${i})" type="button" value="삭제">
             </div>`
-            
-        }
+            }
+        let total=0;
+        for(let i=0; i<payList.length; i++){total += Number(payList[i]);}
+        console.log(total);
+        const sumlist=document.querySelector('#sumlist');
+        sumlist.innerHTML=total
     bottom.innerHTML=html;
     document.querySelector('#date').value='';
     document.querySelector('#title').value='';
     document.querySelector('#pay').value='';
 
 }
-
-// ======================= 합계함수 =======================
-
-    let sum=0;
-    for(let i=0; i<payList.length;i++){
-        sum +=payList[i];
-    }
-    console.log(sum);
