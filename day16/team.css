@@ -1,0 +1,44 @@
+*{
+    font-size: 18px; font-weight: bold;
+}
+h1{font-size: 20px; text-align: center;}
+input{border: none;}
+
+#wrap{
+    display: flex; justify-content: space-between;
+    width: 800px; margin: 0 auto;
+}
+/* 거래처================================================== */
+#tT{
+    margin: 0 auto; text-align: center;
+    margin-bottom: 10px; padding-left: 30px;
+}
+#tT>div>input{padding: 10px;}
+div> #등록1 {
+    background-color: rgb(165, 197, 197); margin-bottom: 40px;
+    width: 250px; height: 30px;
+    border-radius: 20px; 
+   
+}
+/* 거래처 입력 end================== */
+#top{text-align: center;}
+#tBT{
+    display: flex; justify-content: space-between;
+    
+}
+/* 발주============================================ */
+#bT{
+    display: flex; margin: 0 auto; 
+    margin-bottom: 20px; justify-content: space-between;
+}
+
+#bTB{
+    display: flex; justify-content: space-between;
+}
+
+#총합계 {
+    background-color:rgb(165, 197, 197);
+    text-align: center; border-radius: 20px;
+    height: 30px; padding-top: 4px;
+    margin-top: 20px;
+}

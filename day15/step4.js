@@ -18,8 +18,6 @@
 3.  날짜를 무작위로 등록해도 오름차순으로 출력해주는 함수/로직
 */
 
-console.log('가계부JS열림')
-
 const dateList=[ ];
 const titleList=[ ];
 const payList=[ ];
@@ -28,24 +26,24 @@ const payList=[ ];
 
 
 // ======================= 등록함수 =======================
-function submit(){console.log('서밋펑션 확인')
+function submit(){
 
     // [입력] 날짜 항목 금액
-    const date=document.querySelector('#date').value; console.log(date);
-    const title=document.querySelector('#title').value; console.log(title);
-    const pay=document.querySelector('#pay').value; console.log(pay);
+    const date=document.querySelector('#date').value;
+    const title=document.querySelector('#title').value;
+    const pay=document.querySelector('#pay').value;
 
     // [처리] 날짜 항목 금액
-    dateList.push(date); console.log(dateList)
-    titleList.push(title); console.log(titleList)
-    payList.push(pay); console.log(payList)
+    dateList.push(date);
+    titleList.push(title);
+    payList.push(pay);
 
     // [출력]
         print()
 }
 
 // ======================= 삭제함수 =======================
-function listDelete(deIndex){console.log('삭제함수()실행'+deIndex)
+function listDelete(deIndex){
         dateList.splice(deIndex,1);
         titleList.splice(deIndex,1);
         payList.splice(deIndex,1);
@@ -55,9 +53,9 @@ function listDelete(deIndex){console.log('삭제함수()실행'+deIndex)
 
 // ======================= 출력함수 =======================
 function print(){
-    const bottom=document.querySelector('#bottom'); console.log(bottom);
+    const bottom=document.querySelector('#bottom');
     let html="";
-        for(let i=0; i<dateList.length; i++){console.log(html);
+        for(let i=0; i<dateList.length; i++){
             html +=`
             <div class=td>
                 <div>${dateList[i]}</div>
@@ -66,14 +64,24 @@ function print(){
                 <input onclick="listDelete(${i})" type="button" value="삭제">
             </div>`
             }
-        let total=0;
+    let total=0;
         for(let i=0; i<payList.length; i++){total += Number(payList[i]);}
-        console.log(total);
-        const sumlist=document.querySelector('#sumlist');
-        sumlist.innerHTML=total
+
+    const sumlist=document.querySelector('#sumlist');
+    sumlist.innerHTML=total
     bottom.innerHTML=html;
+
     document.querySelector('#date').value='';
     document.querySelector('#title').value='';
     document.querySelector('#pay').value='';
 
+}
+
+function 천단위(){
+    let i=0
+    let payIndex=payList.indexOf(1); console.log(payIndex)
+    let coma=payIndex[1].push(','); console.log(coma)
+    for(let element of payList){
+        if(parseInt(element/1000)<11){payIndex[1].push(',')}
+    }
 }
