@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step1.css'>
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <img src="img/mainimg1.png"/>
+            <ul>
+<!--            <li>신제품(NEW)</li>
+                <li class="selectMenu">프리미엄</li>
+                <li>와퍼&주니어</li>
+                <li>치킨&슈림프버거</li>
+                <li>올데이킹&킹모닝</li> -->
+            </ul>
+        </div>
+        <div id="main">
+            <div id="productBox">
+
+                <!-- ========== 제품 1개 ========== -->
+                <!-- <div class="product">
+                    <img src="img/더블비프불고기버거.png"/>
+                    <div class="pinfo">
+                        <div class="ppname">큐브스테이크와퍼</div>
+                        <div class="pprice">8,000원</div>
+                    </div>
+                </div> -->
+
+                <!-- ========== 제품 1개 ========== -->
+                <!-- <div class="product">
+                    <img src="img/불양양맥시멈3.png"/>
+                    <div class="pinfo">
+                        <div class="ppname">큐브스테이크와퍼</div>
+                        <div class="pprice">8,000원</div>
+                    </div>
+                </div> -->
+
+            </div>
+            <div id="cartBox">
+                <div id="cartContent">
+                    <div id="cartTop">
+                        <div>카트<span id="cartCount">0</span></div>
+                        <div>총 주문금액 <span id="totalPrice">0원</span></div>
+                    </div>
+                    <div id="cartBottom">
+                        <!-- 장바구니 제품들 출력되는 구역 -->
+                        <!-- 카트에 담긴 제품1개 -->
+                        <!-- <div class="citem">
+                            <div>큐브스테이크 와퍼</div>
+                            <div>9,500원</div>
+                            <span>X</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="cartBtns">
+                    <input type="button" value="취소하기"></input>
+                    <input type="button" value="주문하기"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>관리자 메뉴</h3>
+        <div>
+            <h3>카테고리 등록</h3>
+            카테고리번호<input id="newCategoryNum" type="text">카테고리이름<input id="newCategoryName" type="text">
+            <input onclick="addCategory()" type="button" value="등록하기">
+            <div>
+                <table id="newCategoryList">
+                  <!--   <tr>
+                        <td>cno:1</td>
+                        <td>신제품(NEW)</td>
+                    </tr>
+                    <tr>
+                        <td>cno:2</td>
+                        <td>프리미엄</td>
+                    </tr>
+                    <tr>
+                        <td>cno:3</td>
+                        <td>와퍼&주니어</td>
+                    </tr><tr>
+                        <td>cno:4</td>
+                        <td>치킨&슈림프버거</td>
+                    </tr><tr>
+                        <td>cno:5</td>
+                        <td>올데이킹&킹모닝</td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+        <div>
+            <h3>제품 등록</h3>
+        </div>
+    </div>
+    <script src='step1.js'></script>
+</body>
+</html>

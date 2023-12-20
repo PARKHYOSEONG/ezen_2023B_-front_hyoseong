@@ -1,0 +1,29 @@
+let categoryList=[
+    {cno:1, cname:'신제품(NEW)'},
+    {cno:2, cname:'프리미엄'},
+    {cno:3, cname:'와퍼&주니어'},
+    {cno:4, cname:'치킨&슈림프버거'},
+    {cno:5, cname:'올데이킹&킹모닝'}
+]
+
+카테고리 등록
+	추가					삭제
+	{cno:6, cname:'불고기&스파이시'}		X
+
+		추가
+카테고리번호	6
+이름		불고기&스파이시
+
+let productArray=[
+    {pno:1, pname:'큐브 스테이크 와퍼', pprice:8000, pimg:'큐브스테이크와퍼.png', cno:1},
+    {pno:2, pname:'더블비프불고기버거', pprice:9000, pimg:'더블비프불고기버거.png', cno:1},
+    {pno:3, pname:'불양양 맥시멈3', pprice:8000, pimg:'불양양맥시멈3.png', cno:5}
+]
+제품 등록
+	추가										삭제
+	{pno:4, pname:'불고기스파이시버거', pprice:12000, pimg:'불고기스파이시버거.png', cno:6}	X
+		추가
+이름		불고기스파이시버거
+가격		12000
+상품번호		4
+카테고리번호	6
