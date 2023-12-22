@@ -1,0 +1,7 @@
+
+h1{text-align: center;}
+#wrap{width: 1280px; margin: 0 auto;}
+#dayBox{width: 100%; display: flex; flex-wrap: wrap;}
+#dayBox > div{width:200px; height: 200px;
+        border: solid 1px red; margin: 10px 10px;}
+#dayBox > div > a{display: block;}

@@ -2,7 +2,7 @@
     객체 : 속성과 메소드를 가질 수 있는 모든것
         형태
             객체 선언 const object={ }
-            객체 내 속성추가 : object.key=value;
+            객체 내 속성(property) 추가 : object.key=value;
             객체 내 속성의 값 호출 : object.속성명
             객체 내 속성의 값 변경 : object.key=value;
         배열도 객체
