@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'seolleimcool-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{font-family: 'seolleimcool-SemiBold'}
+div{border: 1px solid red;padding: 1px;}
+
+#wrap{width: 900px; margin: 0 auto;}
+#header, #main, #footer{margin: 10px 10px;}
+
+#topHeader{display: flex;}
