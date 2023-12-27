@@ -1,7 +1,7 @@
 console.log('js 열림')
 
 // ========================== 카테고리 리스트 ========================== //
-let categoryList=[
+const categoryArray=[
     {cno:1, cname:'메인메뉴'},
     {cno:2, cname:'닭발메뉴'},
     {cno:3, cname:'세트메뉴'},
@@ -10,7 +10,7 @@ let categoryList=[
 
 // ========================== 메인메뉴 리스트 ========================== //
                 // 사진링크는 폴더 변경되면 수정
-let cno1ProductAr=[
+const cno1ProductArray=[
     {pno:1,  cno:1, pname:'엽기메뉴', pimg:'메인메뉴_엽기메뉴.png', pprice:14000},
     {pno:2,  cno:1, pname:'로제메뉴', pimg:'메인메뉴_로제메뉴.png', pprice:16000},
     {pno:3,  cno:1, pname:'짜장메뉴', pimg:'메인메뉴_짜장메뉴.png', pprice:16000},
@@ -20,14 +20,14 @@ let cno1ProductAr=[
 ]
 
 // ========================== 닭발메뉴 리스트 ========================== //
-let cno2ProductAr=[
+const cno2ProductArray=[
     {pno:1,  cno:2, pname:'엽기무뼈닭발', pimg:'닭발메뉴_엽기무뼈닭발.png', pprice:15000},
     {pno:2,  cno:2, pname:'엽기국물닭발', pimg:'닭발메뉴_엽기국물닭발.png', pprice:15000},
     {pno:3,  cno:2, pname:'엽기오돌뼈', pimg:'닭발메뉴_엽기오돌뼈.png', pprice:14000}
 ]
 
 // ========================== 세트메뉴 리스트 ========================== //
-let cno3ProductAr=[
+const cno3ProductArray=[
     {pno:1,  cno:3, pname:'실속세트', pimg:'세트메뉴_실속세트.png', pprice:17500},
     {pno:2,  cno:3, pname:'베스트세트', pimg:'세트메뉴_베스트세트.png', pprice:20000},
     {pno:3,  cno:3, pname:'스페셜세트', pimg:'세트메뉴_스페셜세트.png', pprice:25000},
@@ -35,7 +35,7 @@ let cno3ProductAr=[
 ]
 
 // ========================== 사이드/음료 리스트 ========================== //
-let cno4ProductAr=[
+const cno4ProductArray=[
     {pno:1,  cno:4, pname:'엽기오돌뼈밥', pimg:'사이드음료_엽기오돌뼈밥.png', pprice:4500},
     {pno:2,  cno:4, pname:'참치마요밥', pimg:'사이드음료_참치마요밥.png', pprice:3500},
     {pno:3,  cno:4, pname:'주먹김밥(셀프)', pimg:'사이드음료_주먹김밥(셀프).png', pprice:2000},
@@ -58,8 +58,8 @@ let cno4ProductAr=[
 ]
 
 // ========================== 로컬스토리지 등록 ========================== //
-localStorage.setItem('categoryList',JSON.stringify(categoryList));
-localStorage.setItem('cno1ProductAr',JSON.stringify(cno1ProductAr));
-localStorage.setItem('cno2ProductAr',JSON.stringify(cno2ProductAr));
-localStorage.setItem('cno3ProductAr',JSON.stringify(cno3ProductAr));
-localStorage.setItem('cno4ProductAr',JSON.stringify(cno4ProductAr));
+localStorage.setItem('categoryArray',JSON.stringify(categoryArray));
+localStorage.setItem('cno1ProductArray',JSON.stringify(cno1ProductArray));
+localStorage.setItem('cno2ProductArray',JSON.stringify(cno2ProductArray));
+localStorage.setItem('cno3ProductArray',JSON.stringify(cno3ProductArray));
+localStorage.setItem('cno4ProductArray',JSON.stringify(cno4ProductArray));
