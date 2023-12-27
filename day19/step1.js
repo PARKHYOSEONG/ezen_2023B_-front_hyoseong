@@ -151,7 +151,6 @@ function printCart(){
     document.querySelector('#totalPrice').innerHTML=totalPrice.toLocaleString()+"원";
 }
 
-
 // =============================================================================================== //
 
 function addCategory(){ console.log('addCategory()')
