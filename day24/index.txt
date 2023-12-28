@@ -1,0 +1,16 @@
+day24
+    index.html      : 첫페이지
+    header.html     : 헤더페이지[공통]
+    write.html      : 쓰기페이지
+    css폴더 
+        common.css  : 공통CSS
+        index.css   : index.html
+    js폴더
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        common.js   : 공통 JS
+        index.js    : 
+    img폴더
+    폰트
+        https://noonnu.cc/
+    이모지
+        https://snskeyboard.com/emoji/
