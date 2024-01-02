@@ -1,0 +1,125 @@
+기계어 : 컴퓨터가 이해 할 수 있는 언어 / 2진코드 / 0,1
+	- 고급언어 : 사람이 이해 할 수 있는 언어
+		C, C++, 자바, 파이썬 JS 등등
+	- 저급언어 : 컴퓨터가 이해 할 수 있는 언어
+		어셈블리어
+
+실행과정
+	사람(문자) ---> JAVA문법 ---> 소스파일( .java ) ---> 컴파일/렌더링 ---> 기계어파일( .class)
+
+
+특징
+	1. 모든 운영체제에서 실행 가능 = JVM
+		- 기계어를 사용하기 때문에 모든 운영체제에서 실행이 가능하다.
+	2. 객체 지향 프로그래밍
+		- 부품을 만들고 부품들을 연결해서 더 큰 프로그램 완성 ( ex : 레고) 
+	3. 메모리 자동 정리 = JVM
+		- *Garbage Collection ( GC ) : 사용하지 않는 메모리를 자동으로 초기화/제거
+	4. 무료 라이브러리 풍부
+		- 미리 만들어진 함수/클래스들을 제공 함으로써 빠른 개발/협업 도움 ( ex : 스프링 프레임워크)
+
+JDK JAVA Development Kit : 자바 개발 도구
+	- JAVA문법과 라이브러리 가지고 있는 파일
+	- 버전 : JDK8, JDK11, JDK17(강의)
+	- 스프링3.0 이상부터 JDK17 이상 지원 ( 전자정부프레임워크 1.8 다수 )
+		JDK17에 JDK8 포함
+
+텍스트 에디터
+	각 언어별 자동완성 / 개발 도움을 주는 환경/기능
+	1. Visual Studio Code ( 프론트엔드 가장 인기 )	: 프론트엔드 수업
+	2. IntelliJ IDEA ( 일반 기업/프리랜서 가장 인기 )	: 백엔드 수업
+		IntelliJ IDEA Ultimate : 유료버전
+		IntelliJ IDEA Community Edition : 무료버전 2023.3.2 [ 강의 ]
+	3. Eclipse ( 백엔드 가장 인기 )	 	: 전면 무료
+
+JVM이란 Java Virtual Machine, 자바 가상 머신
+
+IntelliJ IDEA Community Edition
+	1. 실행
+	2.  New Project
+		1) name : 프로젝트 이름 (ezen_2023B_backend)
+		2) location : 프로젝트 위치
+			create git repository
+		3) language : JAVA
+		4) build system : IntelliJ
+		5) JDK
+			[ 최초 1번]
+				1. Download JDK
+				2. version : JDK17*, Amazon (상관없음)
+		[ Create ]
+
+[ 필수 세팅]
+	1. 테마 선택
+		메뉴 - 셋팅 - appearance
+	2. 마우스 휠 확대/축소
+		메뉴 - 셋팅 - editor - general - mouse control - change font size with  Ctrl+mouse wheel in - active editors
+	3. 플러그인
+		메뉴 - 셋팅 - 플러그인
+		한글패치
+
+[ 자바 프로젝트 폴더 구성 ]
+	1. 프로젝트 이름 ezen_2023B_backend
+		- idea : 인텔리제이 설정파일 [ 신경 X ]
+
+		- out : 컴파일/실행결과 된 파일/바이트코드 파일 / 저급언어 ( 컴퓨터 ) Main.calss 
+			
+		- src : 컴파일 실행 전 파일/소스파일 / 고급언어 ( 개발자 ) main [ Main.java ]
+			폴더 / 패키지(day01) --> 클래스(*Step1)
+				day01 / Step1 *첫글자 대문자!! [ 아닐경우 오류 발생 ]
+		- gitignore : git 사용시 무시할 파일 ( commit 제외 )
+
+		- 외부 라이브러리
+			JDK17 
+===============================
+
+p. 34
+	변수 : 하나의 값을 저장할 수 있는 메모리 번지에 붙여진 이름
+		- 사용하는 이유
+			1. 하나의 값을 저장 [ 나중에 사용 가능, 기억 ]
+
+	변수 선언
+		타입
+		- 기본자료형 8가지 존재
+			- 사용하는 이유 : 단점(암기), 장점(데이터타입 가독성, 실수/오류, *메모리효율성[빈공간])
+		- 정수형 타입
+			byte, short, int, long
+				byte - 1byte
+				short - 2byte
+				int - 4byte
+				long - 8byte
+				char - 2byte
+		- 실수형 타입
+			float, double
+				flaot - 4byte
+				double - 8byte
+		- 불리언 타입
+			boolean
+				boolean - 1byte
+		- 문자 타입 vs 문자열
+			char
+
+		이름
+			첫글자가 소문자인 카멜표기법 (첫글자가 문자이여야함) 띄어쓰기X, 공백X 일부 특수문자는 가능
+			사용하는 이유 : 식별하기 위해( 컴퓨터는 저장 시 메모리 주소값[16진수]=사람이 알기 어려워 )
+		대입
+			=
+		초기값
+			타입 범위내 데이터만 저장 가능 int이면 int 범위 내 double이면 double 범위 내
+	변수 선언 종류
+		타입 변수명		[ * 아직 메모리 할당 X -> 호출 불가능 ]
+		타입 변수명 = 초기값
+
+===============================
+진수
+	
+
+
+
+
+
+
+
+
+
+
+
