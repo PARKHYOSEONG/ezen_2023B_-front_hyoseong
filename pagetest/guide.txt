@@ -1,0 +1,25 @@
+pagetest(최상위 폴더)
+    ezen
+        board
+            wirte.html
+        footer.html
+        header.html
+        index.html
+
+    static
+        css
+        img
+        js
+            index.js
+            write.js
+
+HTML안에 HTML포함하는 방법
+    코드 복붙
+    1. 템플릿 엔진 지원
+        JSP : JAVA+HTML
+        REACT : JS+HTML
+        타임리프 : SPRING+HTML
+    2. JS를 이용한 HTML 호출
+        JQuery : JS확장 라이브러리
+            JQuery 사용할 HTML에 최신 jquery cdn 호출
+
